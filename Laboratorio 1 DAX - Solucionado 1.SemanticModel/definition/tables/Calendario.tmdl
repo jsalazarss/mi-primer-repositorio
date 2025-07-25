@@ -1,0 +1,65 @@
+table Calendario
+	lineageTag: f3927df6-6927-4be5-9c2b-7f8e02b0122f
+
+	column Date
+		formatString: General Date
+		lineageTag: b5f2410a-dc1b-4c63-b297-652a58d89180
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variación
+			isDefault
+			relationship: d316d063-d0df-41dc-9682-46e97baea444
+			defaultHierarchy: LocalDateTable_6a490fae-52f3-4e7a-af99-12011597a9d7.'Jerarquía de fechas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Año
+		formatString: 0
+		lineageTag: f2e6f70f-549b-4323-9476-872c60cce846
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Año]
+
+		annotation SummarizationSetBy = Automatic
+
+	column NroMes
+		formatString: 0
+		lineageTag: 895c38ac-db8b-442b-971e-e744fff681cf
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [NroMes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Mes'
+		lineageTag: a19b42e2-30af-4d14-9243-95c9c48740a1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Nombre Mes]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nombre Dia'
+		lineageTag: 5821a658-29d0-4302-b690-72f80fb2cd85
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Nombre Dia]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				CALENDAR(DATE(2010,1,1),DATE(2020,12,31)),
+				"Año",YEAR([Date]),
+				"NroMes",MONTH([Date]),
+				"Nombre Mes",FORMAT([Date],"MMMM"),
+				"Nombre Dia",FORMAT([Date],"dddd")
+				)
+
+	annotation PBI_Id = b12d30035ace4fa6b483455902bbf03a
+

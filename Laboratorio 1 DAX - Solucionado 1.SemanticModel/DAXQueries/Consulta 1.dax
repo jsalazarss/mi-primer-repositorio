@@ -1,0 +1,5 @@
+DEFINE
+
+MEASURE Medidas[Monto venta mes anterior DATEADD]= 
+
+CALCULATE([Internet Total Sales Amount],DATEADD(Calendario[Date],-1,MONTH))

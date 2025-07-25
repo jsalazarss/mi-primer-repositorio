@@ -1,0 +1,129 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY21SU02\",\"type\":2,\"version\":\"5.18\"}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"exportDataMode\":1,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY21SU02",
+            "path": "BaseThemes/CY21SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Funciones de Inteligencia de tiempo",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 1200.00,
+      "name": "3514ac13676d67e9bfd9",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"05d889b55b30094038ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":12.5,\"y\":57.5,\"z\":0,\"width\":562.5,\"height\":203.75,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Año\",\"active\":true},{\"queryRef\":\"Calendario.NroMes\",\"active\":true},{\"queryRef\":\"Calendario.Nombre Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Monto venta mes anterior\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nombre Mes\"},\"Name\":\"Calendario.Nombre Mes\",\"NativeReferenceName\":\"Nombre Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta mes anterior\"},\"Name\":\"Medidas.Monto venta mes anterior\",\"NativeReferenceName\":\"Monto venta mes anterior\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Calendario.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NroMes\"},\"Name\":\"Calendario.NroMes\",\"NativeReferenceName\":\"NroMes\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendario.Año\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.NroMes\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"NroMes\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Nombre Mes\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Nombre Mes\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}],\"rowHeaders\":[{\"properties\":{\"repeatRowHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Funcion PREVIUSMONT'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 203.75,
+          "width": 562.50,
+          "x": 12.50,
+          "y": 57.50,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"0a2926e8cc53301d9227\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":375,\"z\":2000,\"width\":800,\"height\":337.5,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Año\",\"active\":true},{\"queryRef\":\"Calendario.NroMes\",\"active\":true},{\"queryRef\":\"Calendario.Nombre Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Monto venta acumulado año\"},{\"queryRef\":\"Medidas.Monto venta acumulado año FY\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nombre Mes\"},\"Name\":\"Calendario.Nombre Mes\",\"NativeReferenceName\":\"Nombre Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Calendario.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NroMes\"},\"Name\":\"Calendario.NroMes\",\"NativeReferenceName\":\"NroMes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta acumulado año FY\"},\"Name\":\"Medidas.Monto venta acumulado año FY\",\"NativeReferenceName\":\"Monto venta acumulado año FY\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta acumulado año\"},\"Name\":\"Medidas.Monto venta acumulado año\",\"NativeReferenceName\":\"Monto venta acumulado año\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendario.Año\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.NroMes\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"NroMes\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Nombre Mes\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Nombre Mes\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}],\"rowHeaders\":[{\"properties\":{\"repeatRowHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Funcion DATESYTD'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 337.50,
+          "width": 800.00,
+          "x": 0.00,
+          "y": 375.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"3f9bd09102df2f274d7a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816.25,\"y\":396.25,\"z\":3000,\"width\":562.5,\"height\":203.75,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Año\",\"active\":true},{\"queryRef\":\"Calendario.NroMes\",\"active\":true},{\"queryRef\":\"Calendario.Nombre Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Monto venta acumulado por Quarter\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nombre Mes\"},\"Name\":\"Calendario.Nombre Mes\",\"NativeReferenceName\":\"Nombre Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Calendario.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NroMes\"},\"Name\":\"Calendario.NroMes\",\"NativeReferenceName\":\"NroMes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta acumulado por Quarter\"},\"Name\":\"Medidas.Monto venta acumulado por Quarter\",\"NativeReferenceName\":\"Monto venta acumulado por Quarter\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendario.Año\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.NroMes\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"NroMes\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Nombre Mes\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Nombre Mes\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}],\"rowHeaders\":[{\"properties\":{\"repeatRowHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Funcion DATESQTD'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 203.75,
+          "width": 562.50,
+          "x": 816.25,
+          "y": 396.25,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"51273336f5ed1b8cea7b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":603.75,\"y\":48.75,\"z\":1000,\"width\":627.5,\"height\":308.75,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Año\",\"active\":true},{\"queryRef\":\"Calendario.NroMes\",\"active\":true},{\"queryRef\":\"Calendario.Nombre Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Monto venta mismo año anterior\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nombre Mes\"},\"Name\":\"Calendario.Nombre Mes\",\"NativeReferenceName\":\"Nombre Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Calendario.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NroMes\"},\"Name\":\"Calendario.NroMes\",\"NativeReferenceName\":\"NroMes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta mismo año anterior\"},\"Name\":\"Medidas.Monto venta mismo año anterior\",\"NativeReferenceName\":\"Monto venta mismo año anterior\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendario.Año\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.NroMes\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"NroMes\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Nombre Mes\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Nombre Mes\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}],\"rowHeaders\":[{\"properties\":{\"repeatRowHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Funcion SAMEPERIODLASTYEAR'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 308.75,
+          "width": 627.50,
+          "x": 603.75,
+          "y": 48.75,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"79ec272f660ac3e5d368\",\"layouts\":[{\"id\":0,\"position\":{\"x\":816.25,\"y\":610,\"z\":4000,\"width\":625,\"height\":232.5,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"Calendario.Año\",\"active\":true},{\"queryRef\":\"Calendario.NroMes\",\"active\":true},{\"queryRef\":\"Calendario.Nombre Mes\",\"active\":true}],\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Monto venta mes anterior DATEADD\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendario\",\"Type\":0},{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Nombre Mes\"},\"Name\":\"Calendario.Nombre Mes\",\"NativeReferenceName\":\"Nombre Mes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"},\"Name\":\"Calendario.Año\",\"NativeReferenceName\":\"Año\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"NroMes\"},\"Name\":\"Calendario.NroMes\",\"NativeReferenceName\":\"NroMes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Monto venta mes anterior DATEADD\"},\"Name\":\"Medidas.Monto venta mes anterior DATEADD\",\"NativeReferenceName\":\"Monto venta mes anterior DATEADD\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Año\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"Calendario.Año\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Año\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.NroMes\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"NroMes\"}}],\"isPinned\":true},{\"queryRefs\":[\"Calendario.Nombre Mes\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendario\"}},\"Property\":\"Nombre Mes\"}}],\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}],\"rowHeaders\":[{\"properties\":{\"repeatRowHeaders\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"subTotals\":[{\"properties\":{\"columnSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"rowSubtotals\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Funcion DATEADD'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 232.50,
+          "width": 625.00,
+          "x": 816.25,
+          "y": 610.00,
+          "z": 4000.00
+        }
+      ],
+      "width": 1600.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Funciones de Agregación",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c7d03625d3d272c30938",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5f94c0bb537b72c331f2\",\"layouts\":[{\"id\":0,\"position\":{\"x\":371.28476821192055,\"y\":37.29801324503311,\"z\":0,\"width\":405.1920529801325,\"height\":144.10596026490066,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Medidas.Internet Total Sales Amount\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 144.11,
+          "width": 405.19,
+          "x": 371.28,
+          "y": 37.30,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"61bb400477d79a830622\",\"layouts\":[{\"id\":0,\"position\":{\"x\":122.06622516556291,\"y\":237.35099337748343,\"z\":1000,\"width\":817.1655629139073,\"height\":179.7086092715232,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"ProductCategory.SpanishProductCategoryName\"},{\"queryRef\":\"Medidas.Internet Total OrderQuantity\"},{\"queryRef\":\"Medidas.Internet Total Sales Amount\"},{\"queryRef\":\"Medidas.Maxima Venta por Internet\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Medidas\",\"Type\":0},{\"Name\":\"p\",\"Entity\":\"ProductCategory\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total OrderQuantity\"},\"Name\":\"Medidas.Internet Total OrderQuantity\",\"NativeReferenceName\":\"Internet Total OrderQuantity\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Internet Total Sales Amount\"},\"Name\":\"Medidas.Internet Total Sales Amount\",\"NativeReferenceName\":\"Internet Total Sales Amount\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Maxima Venta por Internet\"},\"Name\":\"Medidas.Maxima Venta por Internet\",\"NativeReferenceName\":\"Maxima Venta por Internet\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SpanishProductCategoryName\"},\"Name\":\"ProductCategory.SpanishProductCategoryName\",\"NativeReferenceName\":\"SpanishProductCategoryName\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 179.71,
+          "width": 817.17,
+          "x": 122.07,
+          "y": 237.35,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Relaciones inactivas",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "db2f64fff778460960c0",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4e9b641263702b5b61ea\",\"layouts\":[{\"id\":0,\"position\":{\"x\":290.75219269537894,\"y\":123.05694462625998,\"z\":0,\"width\":475.3376096347689,\"height\":422.2542217567744,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 422.25,
+          "width": 475.34,
+          "x": 290.75,
+          "y": 123.06,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
