@@ -1,6 +1,15 @@
 table Promotion
 	lineageTag: 2d011190-fa12-4c8d-8da4-de10208844bc
 
+	measure 'Cantidad Registros Promociones' = ```
+			
+			COUNTROWS(Promotion)
+			
+			
+			```
+		formatString: 0
+		lineageTag: 5bd26936-17cf-47c2-beec-6261ff6c31eb
+
 	column PromotionKey
 		dataType: double
 		lineageTag: 6ea283ff-d52b-4afc-aec2-cc23802cac08
